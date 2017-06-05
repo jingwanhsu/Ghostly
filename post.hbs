@@ -95,7 +95,7 @@ the {{{body}}} of the default.hbs template, containing the blog header/footer. -
         <p><strong>View or Post Comments</strong></p>
     </div>
     <div id="disqus_thread">
-        <form onsubmit="my.loadDisqus();return false;" class=formBlock> 
+        <form onsubmit="my.loadDisqus();return false;" class=formBlock>
             <input class="disqusbut" type=submit value="Load Comments">
         </form>
     </div>
@@ -151,16 +151,6 @@ the {{{body}}} of the default.hbs template, containing the blog header/footer. -
 
 <script type="text/javascript" src="{{asset "js/readingtime.js"}}"></script>
 <script type="text/javascript">
-
-  /* Analytics */
-  if(typeof ga_ua != "undefined"){
-    (function(g,h,o,s,t,z){g.GoogleAnalyticsObject=s;g[s]||(g[s]=
-          function(){(g[s].q=g[s].q||[]).push(arguments)});g[s].s=+new Date;
-      t=h.createElement(o);z=h.getElementsByTagName(o)[0];
-      t.src='//www.google-analytics.com/analytics.js';
-      z.parentNode.insertBefore(t,z)}(window,document,'script','ga'));
-      ga('create',ga_ua);ga('send','pageview');
-  }
 
   /* Disqus comment count */
   (function () {

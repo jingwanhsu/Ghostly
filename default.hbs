@@ -51,6 +51,25 @@
     {{!-- Font-Awesome --}}
     <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
 
+    {{!-- Customized Setting --}}
+    <script type="text/javascript">
+        var ga_ua = 'UA-100501173-1';
+        var disqus_shortname = 'jingwan-blog';
+        var linkedin_url = 'https://www.linkedin.com/in/chingwenhsu/';
+    </script>
+
+    <script type="text/javascript">
+        /* Analytics */
+        if(typeof ga_ua != "undefined"){
+            (function(g,h,o,s,t,z){g.GoogleAnalyticsObject=s;g[s]||(g[s]=
+                function(){(g[s].q=g[s].q||[]).push(arguments)});g[s].s=+new Date;
+            t=h.createElement(o);z=h.getElementsByTagName(o)[0];
+            t.src='//www.google-analytics.com/analytics.js';
+            z.parentNode.insertBefore(t,z)}(window,document,'script','ga'));
+            ga('create',ga_ua);ga('send','pageview');
+        }
+    </script>
+
     {{!-- Ghost outputs important style and meta data with this tag --}}
     {{ghost_head}}
     </head>

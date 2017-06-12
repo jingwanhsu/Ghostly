@@ -51,6 +51,9 @@
     {{!-- Font-Awesome --}}
     <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
 
+    {{!-- Ghost outputs important style and meta data with this tag --}}
+    {{ghost_head}}
+
     <script type="text/javascript">
         /* Analytics */
         if(typeof ga_ua != "undefined"){
@@ -63,8 +66,6 @@
         }
     </script>
 
-    {{!-- Ghost outputs important style and meta data with this tag --}}
-    {{ghost_head}}
     </head>
     <body class="{{body_class}} nav-closed">
 

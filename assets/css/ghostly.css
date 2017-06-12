@@ -108,6 +108,10 @@ li.social-icon.hidden {
     display: none;
 }
 
+.nav li.social-icon a {
+    text-overflow: clip;
+}
+
 .social-icon a i {
     transition: .14s color ease-out;
     color: #707070;

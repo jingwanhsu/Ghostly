@@ -104,6 +104,10 @@ li.social-icon {
     display: inline-block;
 }
 
+li.social-icon.hidden {
+    display: none;
+}
+
 .social-icon a i {
     transition: .14s color ease-out;
     color: #707070;

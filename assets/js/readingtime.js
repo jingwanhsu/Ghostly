@@ -120,6 +120,12 @@ Licensed under the MIT license
 
             //split text by spaces to define total words
             var totalWords = text.trim().split(/\s+/g).length;
+
+            if (lang == 'zh') {
+                totalWords = text.replace(/[！？，。]/g, '').trim().split(/\s+/g).reduce((acc, e) => {
+                    return acc + (/^[A-Za-z!?,.]*$/.test(e)? 1: e.split('').length);
+                }, 0)
+            }
             
             //define words per second based on words per minute (wordsPerMinute)
             var wordsPerSecond = wordsPerMinute / 60;

@@ -173,8 +173,13 @@ the {{{body}}} of the default.hbs template, containing the blog header/footer. -
       }
   }());
 
+  var options = {lang: "en", appendTimeString: " read"};
+  if (typeof(readingTimeOptions) != 'undefined') {
+      options = Object.assign({}, options, readingTimeOptions);
+  }
+  
   /* Reading time */
-  $('.post-content').readingTime({lang: "zh", wordsPerMinute: 700, appendTimeString: " read"});
+  $('.post-content').readingTime(options);
 </script>
 
 

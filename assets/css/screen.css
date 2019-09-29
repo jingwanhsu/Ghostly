@@ -656,6 +656,10 @@ body.nav-opened .nav {
     color: #fff;
 }
 
+.nav-tag-title {
+    position: relative;
+}
+
 .nav-close {
     position: absolute;
     top: 38px;
@@ -705,6 +709,10 @@ body.nav-opened .nav {
     list-style: none;
     counter-reset: item;
     margin-top: 32px;
+}
+
+.nav ul.nav-tags {
+    padding: 20px;
 }
 
 .nav li {

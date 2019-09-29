@@ -9,6 +9,14 @@
                 <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
             {{/foreach}}
         </ul>
+        <h3 class="nav-title nav-tag-title">Tags</h3>
+        <ul class="nav-tags">
+            {{#get "tags" limit="all" include='count.posts' }}
+                {{#foreach tags}}
+                    <li class="nav-{{slug}}" id="{{url}}" role="presentation"><a href="{{url}}">{{name}} <small>({{count.posts}})</small></a></li>
+                {{/foreach}}
+            {{/get}}
+        </ul>
     </div>
     <ul class="social-menu">
         {{#if @blog.facebook}}

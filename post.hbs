@@ -17,12 +17,12 @@ into the {body} of the default.hbs template --}}
 
             <header class="post-full-header">
 
-                {{#if primary_tag}}
-                <section class="post-full-tags">
-                    {{#primary_tag}}
-                    <a href="{{url}}">{{name}}</a>
-                    {{/primary_tag}}
-                </section>
+                {{#if tags}}
+                    <section class="post-full-tags">
+                        {{#foreach tags}}
+                            <a href="{{url}}">{{name}}</a>{{#unless @last}}, {{/unless}}
+                        {{/foreach}}
+                    </section>
                 {{/if}}
 
                 <h1 class="post-full-title">{{title}}</h1>
